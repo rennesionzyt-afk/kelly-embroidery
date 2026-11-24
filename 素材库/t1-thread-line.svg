@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="presentation" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#95785E" stop-opacity="0.15"/>
+      <stop offset="0.35" stop-color="#BF8A54" stop-opacity="0.85"/>
+      <stop offset="0.82" stop-color="#C18D5A" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#BF8A54" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <path id="p" d="M 0 74 C 210 74 300 46 470 46 C 660 46 720 78 900 78 C 1050 78 1110 62 1200 62"
+        fill="none" stroke="url(#g)" stroke-width="2" stroke-linecap="round"
+        pathLength="1000" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+  <style>
+    #p { animation: grow 1800ms cubic-bezier(0.16,1,0.3,1) forwards; }
+    @keyframes grow { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { #p { animation: none; stroke-dashoffset: 0; } }
+  </style>
+</svg>

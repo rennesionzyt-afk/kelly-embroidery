@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="繁花似锦 圆印">
+  <defs>
+    <filter id="rr" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <path id="arcT" d="M 38 100 a 62 62 0 0 1 124 0"/>
+    <path id="arcB" d="M 38 100 a 62 62 0 0 0 124 0"/>
+  </defs>
+  <g filter="url(#rr)" fill="#A8352A">
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#A8352A" stroke-width="6"/>
+    <circle cx="100" cy="100" r="79" fill="none" stroke="#A8352A" stroke-width="1.4" opacity="0.75"/>
+    <text font-family="'Songti SC','STSong','SimSun','Noto Serif SC',serif" font-size="40" letter-spacing="9" text-anchor="middle">
+      <textPath href="#arcT" startOffset="50%">繁花</textPath>
+    </text>
+    <text font-family="'Songti SC','STSong','SimSun','Noto Serif SC',serif" font-size="40" letter-spacing="9" text-anchor="middle">
+      <textPath href="#arcB" startOffset="50%">似锦</textPath>
+    </text>
+  </g>
+</svg>
